@@ -9,34 +9,37 @@
 
 <form>
 
-<label for="First Name">First Name</label>
-	<input id="First Name" type="text" placeholder="John" required>
+	<label for="First">First Name:</label>
+	<input name="First" id="first" type="text" placeholder="John" required>
 
-<label for="Last Name">Last Name</label>
-	<input id="Last Name" type="text" placeholder="Smith" required>
-
-
+	<label for="Last">Last Name:</label>
+	<input name="last" id="Last" type="text" placeholder="Smith" required>
 
 
-<label for="Male">Male</label>
+
+<div>
+	<label for="Male">Male</label>
 	<input name="sex" id="Male" type="radio" value="Male">
 
-<label for="Femaale">Female</label>
+	<label for="Femaale">Female</label>
 	<input name="sex" id="Female" type="radio" value="Female">
 
-<label for="Other">Other</label>
+	<label for="Other">Other</label>
 	<input name="sex" id="Other" type="radio" value="Other">
 
+</div>
 
-	<label for="Email ">Email</label>
-	<input id="Email" type="email" placeholder="your email" />
+<div>
+	<label for="Email ">Email:</label>
+	<input name="Email" type="email" placeholder="your email" required>
 
-<label for="Password">Password</label>
-	<input id="Last Name" type="text" placeholder="Password" range="10"/>
+<label for="Password">Password:</label>
+	<input name="Password" type="password" pattern=".{5,10}" required title="5 to 10 Characters">
 
-
-	<p>Birthday:
-		<select name="Month">
+</div>
+	<label>	
+	Birthday:
+		<select name="Month" required>
 				<option>Month</option>
 				<option>December</option>
 				<option>November</option>
@@ -53,7 +56,7 @@
 			</optgroup>
 		</select>
 		
-		<select name="Day">
+		<select name="Day" required>
 				<option>Day</option>
 				<option>1</option>
 				<option>2</option>
@@ -88,7 +91,7 @@
 				<option>31</option>
 			
 		</select>
-		<select name="Year">
+		<select name="Year" required>
 				<option>Year</option>
 				<option>2010</option>
 				<option>2009</option>
@@ -124,22 +127,22 @@
 				<option>1979</option>
 				<option>1978</option>
 				<option>1977</option>
-			
-		</select>
-	</p>	
+			</select>		
+		</label>		
 		
 
 
+<div>
+	<label for="agreed">I agree to the terms and conditions:</label>
+	<input id="agreed" name="agreed" type="checkbox" required>
 
-<p>I agree to the terms and conditions</p>
-
-<input type="checkbox">
+</div>
 
 
+<input type="submit">
 
 
-<input type="submit"
-
-</form>
+</form
 </body>
 </html>
+
